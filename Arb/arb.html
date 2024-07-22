@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, minimum-scale=1">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes"/> 
+    <meta name="description" content="هدفنا هو أن نكون شركة خدمات متكاملة في مجال الزراعة , نحن نحاول تغطية جميع الخدمات التي ممكن ان يحتاجها العملاء. نحن نأمل ان نكون المكان الذي يأتي اليه الشركات التي تعمل في مجال الزراعة للتعامل في كل ما يتعلق بأعمالهم. "><!--       description        -->
+    <link rel="stylesheet" href="arbstyle.css">
+    
+    <!--CDN AOS Animate On Scroll Library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--CDN Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="icon" type="image/png" href="../img/logo-01.png"/>
+
+
+    <title>Brand Roots</title>
+</head>
+<body>
+    <section class="solve-scroll-smartphone">
+    <div class="main" id="home">
+        <div class="fixed-header" data-aos="fade-down" data-aos-duration="1000">
+            <nav>
+                    <img src="../img/tlogo-01.png" alt="logo">
+                    <div class="nav" >
+                        <a href="#home" onclick="home()" class="font-nav-h"> الرئيسيه </a><a href="#service" onclick="service()" class="font-nav-s">خدماتنا</a><a href="#about" onclick="about()" class="font-nav-a">من نحن</a><a href="#contact" onclick="contact()" class="font-nav-c"> تواصل معنا </a>
+                    </div>
+                    <a href="../index.html"><button id="langbutt">      ENG    <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 5px;" width="23" height="23" viewBox="0 0 41.379 41.379">
+                        <path id="Icon_material-language" data-name="Icon material-language" d="M23.669,3a20.69,20.69,0,1,0,20.71,20.69A20.68,20.68,0,0,0,23.669,3ZM38.007,15.414H31.9a32.377,32.377,0,0,0-2.855-7.366A16.613,16.613,0,0,1,38.007,15.414ZM23.69,7.221a29.145,29.145,0,0,1,3.952,8.193h-7.9A29.145,29.145,0,0,1,23.69,7.221ZM7.676,27.828a16.184,16.184,0,0,1,0-8.276h6.993a34.169,34.169,0,0,0-.29,4.138,34.169,34.169,0,0,0,.29,4.138Zm1.7,4.138h6.1a32.378,32.378,0,0,0,2.855,7.366A16.524,16.524,0,0,1,9.372,31.966Zm6.1-16.552h-6.1a16.524,16.524,0,0,1,8.959-7.366A32.377,32.377,0,0,0,15.476,15.414ZM23.69,40.159a29.145,29.145,0,0,1-3.952-8.193h7.9A29.145,29.145,0,0,1,23.69,40.159Zm4.841-12.331H18.848a30.44,30.44,0,0,1-.331-4.138,30.176,30.176,0,0,1,.331-4.138h9.683a30.176,30.176,0,0,1,.331,4.138A30.44,30.44,0,0,1,28.531,27.828Zm.517,11.5A32.378,32.378,0,0,0,31.9,31.966h6.1A16.613,16.613,0,0,1,29.048,39.331Zm3.662-11.5A34.169,34.169,0,0,0,33,23.69a34.169,34.169,0,0,0-.29-4.138H39.7a16.184,16.184,0,0,1,0,8.276Z" transform="translate(-3 -3)" fill="#ddb91f"/>
+                        </svg>          
+                    </button>
+                    </a>
+            </nav>                
+                <div id="bottom-nav"></div>
+        </div>       
+
+        <div class="nav-small-device-only">
+            <nav>
+                <img src="../img/logo-01.png" alt="logo">
+
+                <svg fill="none" onclick="menu()" style="margin-right: 20px;" height="55" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" ><path d="M22 18.005c0 .55-.446.995-.995.995h-8.01a.995.995 0 0 1 0-1.99h8.01c.55 0 .995.445.995.995ZM22 12c0 .55-.446.995-.995.995H2.995a.995.995 0 1 1 0-1.99h18.01c.55 0 .995.446.995.995ZM21.005 6.99a.995.995 0 0 0 0-1.99H8.995a.995.995 0 1 0 0 1.99h12.01Z" fill="#ddb91f" class="fill-000000"></path></svg>        
+                
+            </nav>
+        </div>
+        <div class="menu-body animate__animated animate__slideInDown">
+            <a class="menu-lang-butt" href="../index.html"><button id="langbutt">     ENG    <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 5px;" width="23" height="23" viewBox="0 0 41.379 41.379">
+                <path id="Icon_material-language" data-name="Icon material-language" d="M23.669,3a20.69,20.69,0,1,0,20.71,20.69A20.68,20.68,0,0,0,23.669,3ZM38.007,15.414H31.9a32.377,32.377,0,0,0-2.855-7.366A16.613,16.613,0,0,1,38.007,15.414ZM23.69,7.221a29.145,29.145,0,0,1,3.952,8.193h-7.9A29.145,29.145,0,0,1,23.69,7.221ZM7.676,27.828a16.184,16.184,0,0,1,0-8.276h6.993a34.169,34.169,0,0,0-.29,4.138,34.169,34.169,0,0,0,.29,4.138Zm1.7,4.138h6.1a32.378,32.378,0,0,0,2.855,7.366A16.524,16.524,0,0,1,9.372,31.966Zm6.1-16.552h-6.1a16.524,16.524,0,0,1,8.959-7.366A32.377,32.377,0,0,0,15.476,15.414ZM23.69,40.159a29.145,29.145,0,0,1-3.952-8.193h7.9A29.145,29.145,0,0,1,23.69,40.159Zm4.841-12.331H18.848a30.44,30.44,0,0,1-.331-4.138,30.176,30.176,0,0,1,.331-4.138h9.683a30.176,30.176,0,0,1,.331,4.138A30.44,30.44,0,0,1,28.531,27.828Zm.517,11.5A32.378,32.378,0,0,0,31.9,31.966h6.1A16.613,16.613,0,0,1,29.048,39.331Zm3.662-11.5A34.169,34.169,0,0,0,33,23.69a34.169,34.169,0,0,0-.29-4.138H39.7a16.184,16.184,0,0,1,0,8.276Z" transform="translate(-3 -3)" fill="#ddb91f"/>
+                </svg>          </button>
+            </a>
+            <a href="#home" onclick="home()">الرئيسيه</a><a href="#service" onclick="service()">خدماتنا</a><a href="#about" onclick="about()">من نحن</a><a href="#contact" onclick="contact()">تواصل معنا</a>
+        </div>
+
+        <div class="main-filter"></div>
+        <span id="title-header">Brand <span class="first-letter">R</span>oots</span>
+        <p id="txt-header" data-aos="fade-up" data-aos-duration="1000">هدفنا هو أن نكون شركة خدمات متكاملة في مجال الزراعة , نحن نحاول تغطية جميع الخدمات التي ممكن ان يحتاجها العملاء. نحن نأمل ان نكون المكان الذي يأتي اليه الشركات التي تعمل في مجال الزراعة للتعامل في كل ما يتعلق بأعمالهم</p>
+        <div id="arrow-down" class="scroll-nav"></div>
+
+    </div>
+    <svg id="arrow-butt" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path d="
+        M 0, 6.5
+        C 0, 3.315 3.315, 0 6.5, 0
+        S 13, 3.315 13, 6.5
+            9.685, 13 6.5, 13
+            0, 9.685 0, 6.5
+    " fill="#FFF" transform="rotate(
+        0,
+        100,
+        100
+    ) translate(
+        93.5
+        93.5
+    )"></path></svg>
+    <a href="#arrow-down"><img id="arrow" data-aos="fade-down" data-aos-duration="1000" src="../img/icons8-arrow-45.png"/></a>
+    <section id="section-one">
+        <div class='title-section-one'>
+            <p data-aos="fade-right" data-aos-duration="1000"> من نحن </p>
+            <p class="first-word-r" data-aos="fade-left" data-aos-duration="1000"> وماذا نعمل؟ </p>
+        </div>
+        <div class="body-section-one">
+            <div class="who-are-we">
+                
+
+                <div class="imgs-section">
+                    <img class="img-section-one" src="../img/Buehne_CfP.jpg" width="396px" alt="documents">
+
+                </div>
+                <div class="text-section-one" data-aos="fade-up" data-aos-duration="1000">
+                    <p>
+                        نحن براند روتس شركة موجهه للخدمات الزراعية تم انشائها في عام 2016 هدفها والغرض الرئيسي منها هو خدمة التسجيل للشركات الاخري الراغبه في تسجيل الأسمده أو المبيدات حتي تتمكن من عرضها في السوق الزراعي المصري.
+وحيث ان تسجيل المنتجات مُلزم للعمل في مجال بيع وتداول أي سماد او مبيد في المجال الزراعي المصري لأي شركة ترغب في إستيراد أسمده او مبيدات من الخارج اومنتج تصنيع محلي لذا يجب اللجوء الي تسجيل المنتجات اولا.
+
+                    </p>
+                    <p>
+                        لقد تخصصنا في البداية في الاجراءات التي تخص تسجيل الاسمده والمبيدات الزراعيه . ومع الوقت بدأنا في عرض خدمات تسجيل المنتجات الاخري مثل مبيدات الصحه العامه , المكملات الغذائيه وأغذيه الحيوانات الأليفه , المطهرات و المعقمات. نحن أيضا نساعد عملائنا في التوصل إلي وكالات أجنبية جديده لبيع الاسمده والمبيدات لشراء وتسجيل منتجاتهم ولبيعها في السوق المصري ليصبحوا الموزعين او الوكلاء المعتمدين لهم في مصر.                    </p>
+                </div>
+            </div>
+            <div class="title-section-two">
+                <p data-aos="fade-right" data-aos-duration="1000"> عملائنا </p>
+                <p class="second-word-r" data-aos="fade-left" data-aos-duration="1000"> والمزيد عن طريقة عملنا </p>
+            </div>
+            <div class="our-clients">
+                <div class="text-section-two">
+                    <p data-aos="fade-up" data-aos-duration="1000">
+                        مجالنا الاساسى هو (التسجيل) .عملائنا هم الشركات التي تبيع الاسمدة والمبيدات في السوق المصري. والتي تقتصرخبرتهم علي تسويق منتجاتهم لتحقيق أعلى أهداف البيع على أوسع نطاق باستخدام خبراتهم الفنيه والتجارية. وهذا يجعلهم مشغولين ومكرسين كل وقتهم لذلك و عادة ما تقوم مثل هذه الشركات بالاستعانة بشركات خارجية مثل شركتنا للانتهاء من كل الاجراءات التي تخص وزارة الزراعة مثل تسجيل المنتجات. ونحن نؤكد إننا الأفضل في مجالنا هو "التسجيل" ومن ثَم "استيراد الأسمدة".                    </p>
+                    <p data-aos="fade-up" data-aos-duration="1000">
+                        تسجيل المنتجات هوعملية معقدة جدا وتستغرق شهور ولذلك فاننا نقوم بعمل اكبر عدد ممكن من التسجيلات, مسجله باسم شركتنا جاهزة للاستخدام في اي وقت من قِبل اي شركة محلية تريد استيراد منتج من الخارج دون انتظارإكتمال اجراءات التسجيل مما يسرع فتح عمليات التعاون بين مصانع الاسمدة والمبيدات عالميا و بين المستوردين لهذه المنتجات في مصر الذين هم عملائنا الرئيسيون.
+                    </p>
+                </div>
+                <img class="img-section-two" src="../img/documents.jpg" alt="paper of document">
+
+            </div>
+            <div class="title-section-three">
+                <p data-aos="fade-right" data-aos-duration="1000"> رسالتنا </p>
+                <p data-aos="fade-left" data-aos-duration="1000"> رؤيتنا </p>
+            </div>
+            <div class="misvis-text" data-aos="fade-up" data-aos-duration="1000">
+                <p style="text-align: right;">
+                    ملتزمون بتوفير تجربة عمل بدون إجهاد في مجال تسجيل واستيراد المنتجات الزراعية. رسالتنا هي دعم اي شركة تعمل في مجال الزراعة ومساعدتهم لتحقيق تجربة سريعة وسلسة في التسجيلات ومن ثم تيسيرعملية الاستيراد أو التصنيع.                </p>
+                <hr>
+                <p class="r-vis">
+                    أن نكون الرائد الإقليمي في مجال التسجيل, أن نكون أفضل شركة متميزه في هذا المجال,أن نمتلك أوسع قاعدة بيانات للتواصل بين الشركات المصنعه ومستوردى الأسمدة والمبيدات الزراعية وذلك من خلال التميز وكسب ثقة عملائنا مع تقديم حلول متكامله لاحتياجاتهم.                </p>
+
+            </div>
+            <div class="title-section-four">
+                <p> اهدافنا </p>
+            </div>
+            <div class="objects">
+                <img src="../img/obje.png" alt="goals" width="600px" class="objimg">
+
+                <div class="cont" style="margin-right: 45px;">
+                    <diV data-aos="fade-right" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان نكون من اهم نقط التواصل بين الشركات التي تعمل في مجال الزراعة وبين وزارة الزراعة او الجهات الحكومية المسئولة عن إجراءات التسجيل. 
+                        </p>
+                    </diV>
+                    <diV data-aos="fade-right"data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان نوجة فريق عملنا لكي يتأقلموا علي التحديثات التي تتم في قوانين او في إجراءات التسجيل, وكيفية الوصول الي اعلي درجات الحرفية من خلال الاهتمام دائمًا بمواكبة آخر المستجدات ليكون من أهم اولوياتهم , مواصلة التَعلُم والبحث عن المعلومة بأنفسهم.
+                        </p>
+                    </diV>
+                    <div data-aos="fade-right"data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>نعمل لنكون حلقة مهمة في سلسلة تطور الزراعة في مصر, خاصة وأن هذا مدرج في أجندة النمو الاقتصادي لبلدنا ، والمساعدة في تطوير مجال استيراد وتصدير الأسمدة والمبيدات.<p>
+                        </p>
+                    </div>
+                    <diV data-aos="fade-right" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان نساعد ايضاً المنتجين المحلين في تسجيل منتجاتهم ومساعدتهم في استخراج كل التراخيص المطلوبة للانتاج . 
+                        </p>
+                        </diV>
+                    <diV data-aos="fade-right" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان نشجع الشركات الاجنبية ان تتعامل مع الوكلاء في مصر و تقديم السوق المصري في احسن صورة.
+                        </p>
+                    </diV>
+                    
+                </div>
+                <div class="cont">
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان نكون اكبر شركة متخصصة في مجال التسجيلات , استيراد وتصدير الاسمدة والمبيدات.</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان نؤدي جميع الخدمات لعملائنا دون تحملهم اي عبء.
+                        </p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان ننهي اجراءات التسجيل بأسرع وقت ممكن وأن نصبح أسرع مؤسسة تقدم هذه الخدمة.</p>
+                    </div> 
+                    <diV data-aos="fade-left" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان يكون هدفنا ليس فقط عمل الاجراءات وأن نصبح الافضل دائماً , هدفنا الاكبر ان نكون الأفضل في تقديم الاستشارات لعملائنا,عن كيفية المُضي قُدماً فيما إذا كانوا يتعاملون في منتجات أجنبية أو منتجات محلية.
+                        </p>
+                    </diV>
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان يعكسوا مثال جيد وناجح لجميع شباب جيلنا في الشركات التي تعمل في نفس مجالنا اوتقدم نفس الخدمة.</p>
+                    </div>
+                    
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان نستهدف كل العملاء في هذا المجال, ليس فقط المستوردين ولكن ايضاً المصنعين المحلين الذين يعملون جاهدين لسد الفجوة بين المنتجات المحلية والمستوردة.
+
+                    </div>
+                </div>
+                <div class="cont-sm">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان نكون من اهم نقط التواصل بين الشركات التي تعمل في مجال الزراعة وبين وزارة الزراعة او الجهات الحكومية المسئولة عن إجراءات التسجيل. 
+                             </p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان نكون اكبر شركة متخصصة في مجال التسجيلات , استيراد وتصدير الاسمدة والمبيدات.
+                        </p>
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان ننهي اجراءات التسجيل بأسرع وقت ممكن وأن نصبح أسرع مؤسسة تقدم هذه الخدمة.</p>
+                    </div> 
+                    <diV data-aos="fade-left" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان نساعد ايضاً المنتجين المحلين في تسجيل منتجاتهم ومساعدتهم في استخراج كل التراخيص المطلوبة للانتاج . 
+                        </p>
+                    </diV>
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>نعمل لنكون حلقة مهمة في سلسلة تطور الزراعة في مصر, خاصة وأن هذا مدرج في أجندة النمو الاقتصادي لبلدنا ، والمساعدة في تطوير مجال استيراد وتصدير الأسمدة والمبيدات.
+                        </p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان نشجع الشركات الاجنبية ان تتعامل مع الوكلاء في مصر و تقديم السوق المصري في احسن صورة.
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان نوجة فريق عملنا لكي يتأقلموا علي التحديثات التي تتم في قوانين او في إجراءات التسجيل, وكيفية الوصول الي اعلي درجات الحرفية من خلال الاهتمام دائمًا بمواكبة آخر المستجدات ليكون من أهم اولوياتهم , مواصلة التَعلُم والبحث عن المعلومة بأنفسهم.
+                            </p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان نؤدي جميع الخدمات لعملائنا دون تحملهم اي عبء.
+                        </p>
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان يعكسوا مثال جيد وناجح لجميع شباب جيلنا في الشركات التي تعمل في نفس مجالنا اوتقدم نفس الخدمة.</p>
+                    </div> 
+                    <diV data-aos="fade-left" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان يكون هدفنا ليس فقط عمل الاجراءات وأن نصبح الافضل دائماً , هدفنا الاكبر ان نكون الأفضل في تقديم الاستشارات لعملائنا,عن كيفية المُضي قُدماً فيما إذا كانوا يتعاملون في منتجات أجنبية أو منتجات محلية.
+                        </p>
+                    </diV>
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <img src="../img/hand.png"><p>ان نستهدف كل العملاء في هذا المجال, ليس فقط المستوردين ولكن ايضاً المصنعين المحلين الذين يعملون جاهدين لسد الفجوة بين المنتجات المحلية والمستوردة.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+    <section id="section-two">
+        <div id="service" class="scroll-nav" ></div>
+
+        <h1 class="service-header">خدماتنا </h1>
+        <p class="txt-header" data-aos="fade-up" data-aos-duration="1000">بتقديمنا هذا النوع من الخدمة لا نضمن فقط الأحتفاظ بعملائنا بل وجذب عملاء جدد.</p>
+        <div class="cont-service">
+            <p>حيث أن هدفنا هو أن نكون شركة خدمات متكاملة في مجال الزراعة , نحن نحاول تغطية جميع الخدمات التي ممكن ان يحتاجها العملاء. نحن نأمل ان نكون المكان الذي يأتي اليه الشركات التي تعمل في مجال الزراعة للتعامل في كل ما يتعلق بأعمالهم. وهذه بعض من الخدمات المهمة التي نقدمها:</p>
+            <div class="cont-boxes" data-aos="fade-up" data-aos-duration="1000">
+                <div class="service-box">
+                    <img src="../img/icon/Fertilizer Registrations.png" width="60" style="margin-bottom: 25px;" alt="Fertilizer Registrations icon">
+                    <p>تسجيل الاسمدة</p>
+                    <p class="boxes-sm">تسجيل الاسمدة</p>
+
+                </div>
+                <div class="service-box">
+                    <img src="../img/icon/Pesticide Registrations.png" width="60" style="margin-bottom: 25px;" alt="Pesticide Registrations icon">
+                    <p>تسجيل المبيدات </p>
+                    <p class="boxes-sm">تسجيل المبيدات </p>
+
+                </div>
+                <div class="service-box">
+                    <img src="../img/icon/Seed Registrations.png" width="58" style="margin-bottom: 25px;" alt="Seed Registrations icon">
+                    <p>تسجيل البذور</p>
+                    <p class="boxes-sm">تسجيل البذور</p>
+
+                </div>
+                
+                <div class="service-box hide-box">
+                    <img src="../img/icon/Feed Additive Registrations.png" width="50" style="margin-bottom: 30px;" alt="Feed Additive Registrations icon">
+                    <p>تسجيل المكملات الغذائية</p>
+                </div>
+            </div>
+            <br>
+            <!--for other small device-->
+            <div class="show-row">
+                <div class="cont-boxes" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="service-box">
+                        <img src="../img/icon/Feed Additive Registrations.png" width="50" style="margin-bottom: 30px;" alt="Feed Additive Registrations icon">
+                        <p>تسجيل المكملات الغذائية</p>
+                        <p class="boxes-sm">تسجيل المكملات الغذائية</p>
+
+                    </div>
+                    <div class="service-box">
+                        <img src="../img/icon/Public Health Pesticide Registrations.png" width="60" style="margin-bottom: 10px;" alt="Public Health Pesticide Registrations icon">
+                        <p>تسجيل مبيدات الصحة العامة </p>
+                        <p class="boxes-sm">تسجيل مبيدات الصحة العامة </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cont-boxes" data-aos="fade-up" data-aos-duration="1000">
+                <div class="service-box hide-box">
+                    <img src="../img/icon/Public Health Pesticide Registrations.png" width="60" style="margin-bottom: 10px;" alt="Public Health Pesticide Registrations icon">
+                    <p>تسجيل مبيدات الصحة العامة </p>
+                </div>
+                <div class="service-box">
+                    <img src="../img/icon/Handling International communications for our clients.png" width="50" style="margin-bottom: 15px;" alt="Handling International communications for our clients icon">
+                    <p>التعامل مع المراسلات الدولية لعملائنا</p>
+                    <p class="boxes-sm">التعامل مع المراسلات الدولية لعملائنا</p>
+                </div>
+                <div class="service-box">
+                    <img src="../img/icon/Searching for new markets or manufacturers worldwide for our clients.png" width="55" alt="Searching for new markets or manufacturers worldwide for our clients">
+                    <p>البحث عن أسواق جديدة أو مصنّعين في جميع أنحاء العالم ليستورد منها عملاؤنا</p>
+                    <p class="boxes-sm">البحث عن مصنّعين في جميع أنحاء العالم للاستيراد منها</p>
+                </div>
+                <div class="service-box">
+                    <img src="../img/icon/Designing all media or graphic needs in the agricultural field, all types of package designing.png" width="50" alt="Designing all media or graphic needs in the agricultural field, all types of package designing, etc icon">
+                    <p>تصميم جميع الاحتياجات الإعلامية في المجال الزراعي ، وتصميم جميع أنواع العبوات .</p>
+                    <p class="boxes-sm"> تصميم جميع العبوات و الاحتياجات الإعلامية .</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-three"> 
+        <div id="about" class="scroll-nav"></div>
+       
+        <h1>الفريق</h1>
+
+        <img src="../img/26684 copy 3.png" class="img-section-three">
+        <div class="our-team-one">
+        </div>
+        <div class="filter-team-img">
+            <div class="cont-team-txt">
+                <p class="txt-left-team" data-aos="fade-up" data-aos-duration="1000">
+                    براند روتس تخصص فريق عمل ذو خبرة يعمل علي مدار الساعه لكي نتأكد ان عملائنا يحصلون علي اسرع خدمة ونتائج بأعلي مستوي في مجال التسجيلات, التي يحتاجون إليها ليصبحوا أكثر ربحية وأكثر قدره على المنافسة و التسجيل هو أول خطوه لعملائنا لكي يتمكنوا من فتح اسواق جديدة وعلي نطاق اوسع.
+                    نحن نعمل بخبرة وتنوع لكي نتمكن من تحمل كل المهام المطلوبه. نحن عادةً ما نستعين بمستشارين في هذا المجال لنستمر في تحسين و تطوير الاداء ومتابعة  اي تحديثات فنية أو قوانين ادارية تخص اجراءات التسجيل.
+                </p>
+                <p class="txt-right-team" data-aos="fade-up" data-aos-duration="1000">
+                    براند روتس تؤمن بروح الفريق و تحرص علي ان تكون أجواء العمل بسيطه ومرحه . نحن نعتبر موظفونا و مستشارينا هم شركاء لنا لاننا نثق ان هذه الروح تخرج أحسن ما لدي فريق العمل . ليشهدوا نتيجة عملهم وجهدهم الشاق, ويدفعهم أن يعملوا بشغف ومثالية لانهم يوقنون إنهم شركاء في اي نجاح يتم تحقيقة.                </p>
+            </div>
+        </div>
+        <div class="our-team-two">
+            <div class="cont-team-members default-team">
+                <div class="txt-member cont-rana" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="head-member">
+                        <img src="../img/team/rana.png" width="220px">
+                        <div class="tag"  style="cursor: pointer;" onclick="ranacontact()">
+                         اتصل بنا
+                        </div>
+                        <div id="contact-rana-tag">
+                            <p>rana@brand-roots.com</p>
+                            <p>+201066690809</p>
+                        </div>
+                        <h1>RANA AYMAN</h1>
+                        <h3>المؤسس والمدير التنفيذي</h3>
+                    </div>
+                    <p>حافز رئيسنا التنفيذي :<br> "يستغرق الأمر سنوات من العمل الشاق لبناء سمعة طيبة. لكي يثق الناس بأنك ستقوم بعملهم كما لو كانوا يقومون بذلك بأنفسهم بنفس الاهتمام والحذر ، فإن هذا يتطلب الكثير من الجهد والتصميم دون أي يأس أو إرهاق. نحن نؤمن بالصبر لبناء سمعة طيبة , نؤمن بالتفاني, نؤمن بالعمل الجاد ".
+                        "شعارنا اليومي في الصباح هو: التخطيط مسبقًا ، والعمل بدقة ، وتحقيق أقصى قدر من المتابعة."
+                        </p>
+                    <p class="title-yellow">بعض مسؤوليات رئيسنا التنفيذي:</p>
+                    <p>
+                        - يقود العمل ويديره بشكل عام.
+                        <br>- يخطط كيف يجب أن تدور المهام بين الفريق في تسلسل وبأداء جيد.
+                        <br>- يعين الموظفين كل في منطقة معينة ويحدد توصيفهم الوظيفي.
+                        <br>- بناء فريق موهوب ومتنوع ومحفز.
+                        <br>- التخطيط لكيفية زيادة الإيرادات إلى سجلات أعلى لتأمين مستقبل الأعمال.
+                        <br>- تدريب الفريق على كيفية بناء قاعدة عملاء سعداء بشكل استثنائي.
+                        <br>- يتابع أداء الفريق.
+                        <br>- يتأكد من عمل الشركه بالمهمة للوصول للرؤية.
+                        <br>- التعلم المستمر جوهر كل شيء. وتتبع اتجاهات السوق في مجالنا.
+                        <br>- جراء مناقشات كبيرة مع الوزارة عند الحاجة.
+                        <br>- التوقع المبكر للمشكلات والتخطيط لكيفية حلها.
+                        <br>- بدء صفقات جديدة مع عملاء جدد مع وضع الخطط حول كيفية تقديم أنفسنا للسوق.
+                        <br>- دائماً ما يتابع العمل مع المديرين الآخري في الفريق.
+                        <br>- يتابع المسائل المالية والخطط بشكل دائم مع مدير الحسابات.
+                    </p>
+                </div>
+                <div class="line-member">
+                    <div class="txt-member cont-manar" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="head-member">
+                            <img src="../img/team/manar.png" width="220px" >
+                            <div class="tag" style="cursor: pointer;" onclick="manarcontact()">
+                                اتصل بنا
+                            </div>
+                            <div id="contact-manar-tag">
+                                <p>manar@brand-roots.com</p>
+                                <p>+201094724638</p>
+                            </div>
+                            <h1>MANAR MOUHAMED</h1>
+                            <h3>مدير الاتصالات الدوليه ومدير تسجيل المبيدات</h3>
+                        </div>
+                        <p>يدير جميع المناقشات والمراسلات الدولية عن اجراءات تسجيل الاسمدة و كل المستدات المطلوبة والمسؤول عن كل الاتصالات المطلوبة مع الموردين من الخارج فيما يخص الاتفاقات والشحنات المطلوب عملها. 
+                            ايضا هو المسؤول عن ادارة تسجيل المبيدات, التعامل ومتابعة كل المبيدات قيد التسجيل.
+                            </p>
+                    </div>
+                    <div class="txt-member cont-sara" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="head-member">
+                            <img src="../img/team/sara.png" width="220px" >
+                            <div class="tag" style="cursor: pointer;" onclick="saracontact()">
+                                اتصل بنا
+                            </div>
+                            <div id="contact-sara-tag">
+                                <p>sara@brand-roots.com</p>
+                                <p>+201024969936</p>
+                            </div>
+                            <h1>SARA MAGDY</h1>
+                            <h3>مدير تسجيل الاسمدة </h3>
+                        </div>
+                        <p>يدير كل الاسمدة قيد التسجيل, بدءاً بمراجعة التركيب العلمي مع مستشارينا ، وإعداد جميع المستندات والملفات اللازمة في إجراءات تسجيل الأسمدة ، ومتابعة عملية التسجيل ، ومتابعة طلبات الوزارة بالوثائق أو العينات اللازمة للتحليل أو التجارب.</p>
+                    </div>
+                    <div class="txt-member cont-amgad" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="head-member">
+                            <img src="../img/team/amgad.png" width="220px" >
+                            <div class="tag" style="cursor: pointer;" onclick="amgadcontact()">
+                                اتصل بنا
+                            </div>
+                            <div id="contact-amgad-tag">
+                                <p>amgad@brand-roots.com</p>
+                                <p>+201095260669</p>
+                            </div>
+                            <h1>AMGAD ROSHDY</h1>
+                            <h3>مسئول تسجيل الأسمدة والمبيدات</h3>
+                        </div>
+                        <p>تقديم ومتابعة كل ما يتعلق بلوائح تسجيل الأسمدة والمبيدات مع وزارة الزراعة. تقديم جميع العينات اللازمة للمختبرات أو المستودعات الحكومية للتحليل والتجارب. مسئول أيضًا عن إنهاء جميع المستندات المطلوبه من وزارة الزراعة أثناء استيراد أي شحنة تخص أي من عملائنا.</p>
+                    </div>
+                </div>
+                <div class="line-member">
+                    <div class="txt-member cont-marwa" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="head-member">
+                            <img src="../img/team/marwa.png" width="220px" >
+                            <div class="tag" style="cursor: pointer;" onclick="marwacontact()">
+                                اتصل بنا
+                            </div>
+                            <div id="contact-marwa-tag">
+                                <p>marwa@brand-roots.com</p>
+                                <p>+201050339498</p>
+                            </div>
+                            <h1>MARWA HOSNY</h1>
+                            <h3>مدير الحسابات</h3>
+                        </div>
+                        <p>يدير المصاريف والدخل اليومي ، والتقارير المالية ، والفواتير ، والتحصيلات ، وإعداد الميزانية. مسؤول عن جميع الموافقات الاستيرادية التي نقدمها لعملائنا. مسؤول عن التخطيط الضريبي على مدار العام. يقدم توصيات للإدارة بشأن الأهداف والسياسات المالية. يؤدي واجبات أخرى ذات صلة بالتسجيلات حسب الضرورة او التكليف.</p>
+                    </div>
+                    <div class="txt-member cont-samar" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="head-member">
+                            <img src="../img/team/samar.png" width="220px" >
+                            <div class="tag" style="cursor: pointer;" onclick="samarcontact()">
+                                اتصل بنا
+                            </div>
+                            <div id="contact-samar-tag">
+                                <p>samar@brand-roots.com</p>
+                                <p>+201007766516</p>
+                            </div>
+                            <h1>SAMAR ELAWADY</h1>
+                            <h3>اخصائي تصميم الجرافيك ووسائل التواصل الاجتماعي</h3>
+                        </div>
+                        <p>مسؤول عن تخطيط وسائل التواصل الاجتماعي للشركة لزيادة الوعي بخدماتنا وزيادة تواجدنا عبر الإنترنت على منصات التواصل الاجتماعي. مسؤول عن تحسين جهود مدير التسويق لزيادة عدد عملائنا. مسؤول أيضًا عن جميع التصميمات التي تحتاجها شركتنا سواء كانت التصميمات التي سيتم تقديمها في وزارة الزراعة أو جميع الاحتياجات الإعلامية والجرافيك لعملائنا لاستخدامها في أسواقهم.</p>
+                    </div>
+                    <div class="txt-member cont-nourhan" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="head-member">
+                            <img src="../img/team/nourhan.png" width="220px" >
+                            <div class="tag" style="cursor: pointer;" onclick="nourcontact()">
+                                اتصل بنا
+                            </div>
+                            <div id="contact-nourhan-tag">
+                                <p>nour@brand-roots.com</p>
+                                <p>+201012299812</p>
+                            </div>
+                            <h1>NOURHAN ISMAAIL</h1>
+                            <h3>مدير التسويق </h3>
+                        </div>
+                        <p>يروج لشركتنا من خلال التأكد من الوصول إلى معظم الشركات العاملة في مجال الزراعة وتقديم أفضل خدماتنا لأكبر عدد من الشركات. يدير مع أخصائي وسائل التواصل الاجتماعي أفضل الخطط الإعلانية. يدير جنبًا إلى جنب مع مديري التسجيل كيفية التعامل مع مخاوف العملاء وحلها للتأكد من أن شركتنا تقدم لعملائنا أفضل وأسرع خدمة للتسجيل.</p>
+                    </div>
+                </div>
+            
+            </div>
+            <!--for other small device-->
+            <div class="cont-team-members hide-team">
+                <div class="first-col-team">
+                    <div class="txt-member" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="head-member">
+                            <img src="../img/team/rana.png" width="220px" >
+                            <div class="tag" style="cursor: pointer;">
+                                اتصل بنا
+                            </div>
+                            <div id="contact-rana-tag-p">
+                                <p>rana@brand-roots.com</p>
+                                <p>+201066690809</p>                            
+                            </div>
+                            <h1>RANA AYMAN</h1>
+                            <h3>المؤسس والمدير التنفيذي</h3>
+                    </div>
+                    <p>حافز رئيسنا التنفيذي :<br> "يستغرق الأمر سنوات من العمل الشاق لبناء سمعة طيبة. لكي يثق الناس بأنك ستقوم بعملهم كما لو كانوا يقومون بذلك بأنفسهم بنفس الاهتمام والحذر ، فإن هذا يتطلب الكثير من الجهد والتصميم دون أي يأس أو إرهاق. نحن نؤمن بالصبر لبناء سمعة طيبة , نؤمن بالتفاني, نؤمن بالعمل الجاد ".
+                        "شعارنا اليومي في الصباح هو: التخطيط مسبقًا ، والعمل بدقة ، وتحقيق أقصى قدر من المتابعة."
+                        </p>
+                    <p class="title-yellow">بعض مسؤوليات رئيسنا التنفيذي:</p>
+                    <p>
+                        - يقود العمل ويديره بشكل عام.
+                        <br>- يخطط كيف يجب أن تدور المهام بين الفريق في تسلسل وبأداء جيد.
+                        <br>- يعين الموظفين كل في منطقة معينة ويحدد توصيفهم الوظيفي.
+                        <br>- بناء فريق موهوب ومتنوع ومحفز.
+                        <br>- التخطيط لكيفية زيادة الإيرادات إلى سجلات أعلى لتأمين مستقبل الأعمال.
+                        <br>- تدريب الفريق على كيفية بناء قاعدة عملاء سعداء بشكل استثنائي.
+                        <br>- يتابع أداء الفريق.
+                        <br>- يتأكد من عمل الشركه بالمهمة للوصول للرؤية.
+                        <br>- التعلم المستمر جوهر كل شيء. وتتبع اتجاهات السوق في مجالنا.
+                        <br>- جراء مناقشات كبيرة مع الوزارة عند الحاجة.
+                        <br>- التوقع المبكر للمشكلات والتخطيط لكيفية حلها.
+                        <br>- بدء صفقات جديدة مع عملاء جدد مع وضع الخطط حول كيفية تقديم أنفسنا للسوق.
+                        <br>- دائماً ما يتابع العمل مع المديرين الآخري في الفريق.
+                        <br>- يتابع المسائل المالية والخطط بشكل دائم مع مدير الحسابات.
+                    </p>
+                    </div>
+                    <div class="txt-member" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="head-member">
+                            <img src="../img/team/manar.png" width="220px" >
+                            <div class="tag" style="cursor: pointer;" onclick="manarcontact()">
+                                اتصل بنا
+                            </div>
+                            <div id="contact-manar-tag-p">
+                                <p>manar@brand-roots.com</p>
+                                <p>+201094724638</p>                            
+                            </div>
+                            <h1>MANAR MOUHAMED</h1>
+                            <h3>مدير الاتصالات الدوليه ومدير تسجيل المبيدات</h3>
+                        </div>
+                        <p>يدير جميع المناقشات والمراسلات الدولية عن اجراءات تسجيل الاسمدة و كل المستدات المطلوبة والمسؤول عن كل الاتصالات المطلوبة مع الموردين من الخارج فيما يخص الاتفاقات والشحنات المطلوب عملها. 
+                            ايضا هو المسؤول عن ادارة تسجيل المبيدات, التعامل ومتابعة كل المبيدات قيد التسجيل.
+                            </p>
+                    </div>
+                    <div class="txt-member" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="head-member">
+                            <img src="../img/team/samar.png" width="220px" >
+                            <div class="tag" style="cursor: pointer;" onclick="samarcontact()">
+                                اتصل بنا
+                            </div>
+                            <div id="contact-samar-tag-p">
+                                <p>samar@brand-roots.com</p>
+                                <p>+201007766516</p>                     
+                            </div>
+                            <h1>SAMAR ELAWADY</h1>
+                            <h3>اخصائي تصميم الجرافيك ووسائل التواصل الاجتماعي</h3>
+                        </div>
+                        <p>مسؤول عن تخطيط وسائل التواصل الاجتماعي للشركة لزيادة الوعي بخدماتنا وزيادة تواجدنا عبر الإنترنت على منصات التواصل الاجتماعي. مسؤول عن تحسين جهود مدير التسويق لزيادة عدد عملائنا. مسؤول أيضًا عن جميع التصميمات التي تحتاجها شركتنا سواء كانت التصميمات التي سيتم تقديمها في وزارة الزراعة أو جميع الاحتياجات الإعلامية والجرافيك لعملائنا لاستخدامها في أسواقهم.</p>
+                    </div>
+                </div>
+                <div class="second-col-team"> 
+                    <div class="txt-member" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="head-member">
+                            <img src="../img/team/amgad.png" width="220px" >
+                            <div class="tag" style="cursor: pointer;" onclick="amgadcontact()">
+                                اتصل بنا
+                            </div>
+                            <div id="contact-amgad-tag-p">
+                                <p>amgad@brand-roots.com</p>
+                                <p>+201095260669</p>                            
+                            </div>
+                            <h1>AMGAD ROSHDY</h1>
+                            <h3>مسئول تسجيل الأسمدة والمبيدات</h3>
+                        </div>
+                        <p>تقديم ومتابعة كل ما يتعلق بلوائح تسجيل الأسمدة والمبيدات مع وزارة الزراعة. تقديم جميع العينات اللازمة للمختبرات أو المستودعات الحكومية للتحليل والتجارب. مسئول أيضًا عن إنهاء جميع المستندات المطلوبه من وزارة الزراعة أثناء استيراد أي شحنة تخص أي من عملائنا.</p>
+                    </div>
+                    <div class="txt-member" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="head-member">
+                            <img src="../img/team/sara.png" width="220px" >
+                            <div class="tag" style="cursor: pointer;" onclick="saracontact()">
+                                اتصل بنا
+                            </div>
+                            <div id="contact-sara-tag-p">
+                                <p>sara@brand-roots.com</p>
+                                <p>+201024969936</p>                            
+                            </div>
+                            <h1>SARA MAGDY</h1>
+                            <h3>مدير تسجيل الاسمدة </h3>
+                        </div>
+                        <p>يدير كل الاسمدة قيد التسجيل, بدءاً بمراجعة التركيب العلمي مع مستشارينا ، وإعداد جميع المستندات والملفات اللازمة في إجراءات تسجيل الأسمدة ، ومتابعة عملية التسجيل ، ومتابعة طلبات الوزارة بالوثائق أو العينات اللازمة للتحليل أو التجارب.</p>
+                    </div>
+
+                    
+                    <div class="txt-member" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="head-member">
+                            <img src="../img/team/marwa.png" width="220px" >
+                            <div class="tag" style="cursor: pointer;" onclick="marwacontact()">
+                                اتصل بنا
+                            </div>
+                            <div id="contact-marwa-tag-p">
+                                <p>marwa@brand-roots.com</p>
+                                <p>+201050339498</p>                            
+                            </div>
+                            <h1>MARWA HOSNY</h1>
+                            <h3>مدير الحسابات</h3>
+                        </div>
+                        <p>يدير المصاريف والدخل اليومي ، والتقارير المالية ، والفواتير ، والتحصيلات ، وإعداد الميزانية. مسؤول عن جميع الموافقات الاستيرادية التي نقدمها لعملائنا. مسؤول عن التخطيط الضريبي على مدار العام. يقدم توصيات للإدارة بشأن الأهداف والسياسات المالية. يؤدي واجبات أخرى ذات صلة بالتسجيلات حسب الضرورة او التكليف.</p>
+                    </div>
+                    <div class="txt-member" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="head-member">
+                            <img src="../img/team/nourhan.png" width="220px" >
+                            <div class="tag" style="cursor: pointer;" onclick="nourcontact()">
+                                اتصل بنا
+                            </div>
+                            <div id="contact-nourhan-tag-p">
+                                <p>nour@brand-roots.com</p>
+                                <p>+201012299812</p>                            
+                            </div>
+                            <h1>NOURHAN ISMAAIL</h1>
+                            <h3>مدير التسويق </h3>
+                        </div>
+                        <p>يروج لشركتنا من خلال التأكد من الوصول إلى معظم الشركات العاملة في مجال الزراعة وتقديم أفضل خدماتنا لأكبر عدد من الشركات. يدير مع أخصائي وسائل التواصل الاجتماعي أفضل الخطط الإعلانية. يدير جنبًا إلى جنب مع مديري التسجيل كيفية التعامل مع مخاوف العملاء وحلها للتأكد من أن شركتنا تقدم لعملائنا أفضل وأسرع خدمة للتسجيل.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="num-animate" class="scroll-nav"></div>
+
+        <div class="our-company">
+
+            <div class="title-company-num">
+                <p>احصائياتنا</p>
+            </div>
+            <p data-aos="fade-up">نحن دائمًا نلقي نظرة فاحصة على احصائياتنا من أجل معرفة مكاننا الآن ومتابعة وضع أعمالنا. نحن مقدمو خدمات ، لذا كم مرة قدمنا خدماتنا سنويًا هي رقم مهم للغاية يجب أن نواصل متابعته دائمًا حتى نتمكن من تحديد وضعنا ومعرفة ما إذا كنا قادرين ، بمرور الوقت ، على زيادة عدد عملائنا و عدد المرات التي قدمنا فيها خدماتنا لهم.
+                في النهاية ، المزيد من الأرقام هو بالتأكيد المزيد من النجاح.
+               </p>
+            <div class="content-num" data-aos="fade-up" data-aos-duration="1000">
+                <div class="value" val="90">0
+                </div>
+                <p class="hide-num">عملاؤنا</p>
+
+                <div class="value" val="100">0
+                </div>
+                <p class="hide-num">عدد التسجيلات التي نعمل عليها سنويًا </p>
+
+                <div class="value" val="700">0
+                </div>
+                <p class="hide-num">عدد الموافقات الاستيرادية التي نقوم بإعدادها سنويًا </p>
+
+            </div>
+            <div class="content-text" data-aos="fade-up" data-aos-duration="1000">
+                <p>عملاؤنا</p>
+                <p>عدد التسجيلات التي نعمل عليها سنويًا </p>
+                <p>عدد الموافقات الاستيرادية التي نقوم بإعدادها سنويًا </p>
+            </div>
+        </div>
+        <div class="our-client">
+            <h1>العملاء</h1>
+
+            <div class="banner-one">
+                <div class="photobanner">
+                    <img class="first-banner-one" src="../img/clients/square1/9.png" width="180" alt="" />
+                    <img src="../img/clients/square1/aa.png" alt="" width="180"/>
+                    <img src="../img/clients/square1/advisers.png" alt="" width="180"/>
+                    <img src="../img/clients/square1/agresmart.png" alt="" width="180"/>
+                    <img src="../img/clients/square1/agro pland.png" alt="" width="150"/>
+                    <img src="../img/clients/square1/almarwa.png" alt="" width="180"/>
+                    <img src="../img/clients/square1/biotec.png" alt="" width="180"/>
+                    <img src="../img/clients/square1/canson.png" alt="" width="180"/>
+                    <img src="../img/clients/square1/conserve.png" alt="" width="180"/>
+                    <img src="../img/clients/square1/el manar.png" alt="" width="180"/>
+                    <img src="../img/clients/square1/elahlia.jpg" alt="" width="180"/>
+                    <img src="../img/clients/square1/elsaady.jpg" alt="" width="160"/>
+                    <img src="../img/clients/square1/emad osta.jpg" alt="" width="180"/>
+                    <img src="../img/clients/square1/green apple.png" alt="" width="180"/>
+                    <img src="../img/clients/square1/green life.png" alt="" width="180"/>
+                    <img src="../img/clients/square1/green plant.png" alt="" width="180"/>
+                    <img src="../img/clients/square1/green point.jpg" alt="" width="180"/>
+                    <img src="../img/clients/square1/kayan.png" alt="" width="180"/>
+                    <img src="../img/clients/square1/pharma.jpg" alt="" width="180"/>
+                    <img src="../img/clients/square1/pharochem.jpg" alt="" width="150"/>
+                    <img src="../img/clients/square1/setra.png" alt="" width="200"/>
+                    <img src="../img/clients/square1/watex.png" alt="" width="180"/>
+                    <img src="../img/clients/square1/yara.jpg" alt="" width="180"/>
+                    <!--Those are duplicated for the infinite loop-->
+                    <img src="../img/clients/square1/9.png" width="180" alt="" />
+                    <img src="../img/clients/square1/aa.png" alt="" width="180"/>
+                    <img src="../img/clients/square1/advisers.png" alt="" width="180"/>
+                    <img src="../img/clients/square1/agresmart.png" alt="" width="180"/>
+                    <img src="../img/clients/square1/agro pland.png" alt="" width="150"/>
+                    <img src="../img/clients/square1/almarwa.png" alt="" width="180"/>
+                    <img src="../img/clients/square1/biotec.png" alt="" width="180"/>
+                </div>
+            </div>
+            
+            <div class="banner-two">
+                <div class="photobanner">
+                    <img class="last-banner-one" src="../img/clients/vertical/2.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/aghsan.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/aljana trade.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/anthis.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/safechem.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/Brandt.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/cdna.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/epco.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/3.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/gap.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/gawan.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/green land.jpg" alt="" width="180"/>
+                    <img src="../img/clients/vertical/green world.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/horus.jpg" alt="" width="180"/>
+                    <img src="../img/clients/vertical/lamar.jpg" alt="" width="180"/>
+                    <img src="../img/clients/vertical/4.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/max growth.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/nova care.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/plants.jpg" alt="" width="180"/>
+                    <img src="../img/clients/vertical/prima.jpg" alt="" width="180"/>
+                    <img src="../img/clients/vertical/rand vet.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/roya.jpg" alt="" width="180"/>
+                    <img src="../img/clients/vertical/5.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/bavaria.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/viridi.jpg" alt="" width="180"/>
+                    <img src="../img/clients/vertical/6.png" alt="" width="180"/>
+                    <!--Those are duplicated for the infinite loop-->
+                    <img src="../img/clients/vertical/2.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/aghsan.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/aljana trade.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/anthis.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/safechem.png" alt="" width="180"/>
+                    <img src="../img/clients/vertical/Brandt.png" alt="" width="180"/>
+
+                </div>
+            </div>
+
+            <div class="banner-three">
+                <div class="photobanner">
+                    <img class="first-banner-two" src="../img/clients/square2/a3.png" alt="" width="180"/>
+                    <img src="../img/clients/square2/afdalon.png" alt="" width="180"/>
+                    <img src="../img/clients/square2/agrofert.jpg" alt="" width="180"/>
+                    <img src="../img/clients/square2/agrotoon.png" alt="" width="150"/>
+                    <img src="../img/clients/square2/alwaha.png" alt="" width="180"/>
+                    <img src="../img/clients/square2/bravo.png" alt="" width="180"/>
+                    <img src="../img/clients/square2/canada humex.png" alt="" width="160"/>
+                    <img src="../img/clients/square2/elite.jpg" alt="" width="180"/>
+                    <img src="../img/clients/rakhaa.png" width="100" alt="" />
+                    <img src="../img/clients/square2/green axis.png" alt="" width="180"/>
+                    <img src="../img/clients/square2/green sense.png" alt="" width="150"/>
+                    <img src="../img/clients/square2/greenmagic.jpg" alt="" width="180"/>
+                    <img src="../img/clients/square2/growth chem.jpg" alt="" width="180"/>
+                    <img src="../img/clients/square2/keymanda.png" alt="" width="180"/>
+                    <img src="../img/clients/square2/m.png" alt="" width="180"/>
+                    <img src="../img/clients/square2/mondial.jpg" alt="" width="180"/>
+                    <img src="../img/clients/square2/nileblue.png" alt="" width="180"/>
+                    <img src="../img/clients/square2/novarts.jpg" alt="" width="180"/>
+                    <img src="../img/clients/square2/sac alsadat.png" alt="" width="180"/>
+                    <img src="../img/clients/square2/valor.jpg" alt="" width="180"/>
+                    <img src="../img/clients/square2/safa new.jpg" alt="" width="180"/>
+                    <!--Those are duplicated for the infinite loop-->
+                    <img src="../img/clients/square2/a3.png" alt="" width="180"/>
+                    <img src="../img/clients/square2/afdalon.png" alt="" width="180"/>
+                    <img src="../img/clients/square2/agrofert.jpg" alt="" width="180"/>
+                    <img src="../img/clients/square2/agrotoon.png" alt="" width="150"/>
+                    <img src="../img/clients/square2/alwaha.png" alt="" width="180"/>
+                    <img src="../img/clients/square2/bravo.png" alt="" width="180"/>
+                    <img src="../img/clients/square2/canada humex.png" alt="" width="160"/>
+                </div>
+            </div>
+            
+            <div class="banner-four">
+                <div class="photobanner">
+                    <img class="last-banner-two" src="../img/clients/1.png" width="180" alt="" />
+                    <img src="../img/clients/arma eg.png" width="180" alt="" />
+                    <img src="../img/clients/agroleap.png" width="180" alt="" />
+                    <img src="../img/clients/art fert.png" width="180" alt="" />
+                    <img src="../img/clients/brand chenivals.png" width="180" alt="" />
+                    <img src="../img/clients/convert.png" width="180" alt="" />
+                    <img src="../img/clients/eafcam.png" width="180" alt="" />
+                    <img src="../img/clients/sigmaa.png" width="180" alt="" />
+                    <img src="../img/clients/7.png" width="180" alt="" />
+                    <img src="../img/clients/gjp.png" width="180" alt="" />
+                    <img src="../img/clients/herba.png" width="180" alt="" />
+                    <img src="../img/clients/kemet.png" width="180" alt="" />
+                    <img src="../img/clients/nabat.png" width="180" alt="" />
+                    <img src="../img/clients/pasco.png" width="180" alt="" />
+                    <img src="../img/clients/promovet.jpg" width="180" alt="" />
+                    <img src="../img/clients/pyramids.png" width="180" alt="" />
+                    <img src="../img/clients/semady.png" width="180" alt="" />
+                    <img src="../img/clients/shams.jpg" width="180" alt="" />
+                    <img src="../img/clients/sigma.png" width="180" alt="" />
+                    <img src="../img/clients/8.png" width="180" alt="" />
+                    <img src="../img/clients/themar chem.jpg" width="180" alt="" />
+                    <img src="../img/clients/valuemap.jpg" width="180" alt="" />
+                    <img src="../img/clients/cas.png" width="180" alt="" />
+                                        <!--Those are duplicated for the infinite loop-->
+                    <img src="../img/clients/1.png" width="180" alt="" />
+                    <img src="../img/clients/arma eg.png" width="180" alt="" />
+                    <img src="../img/clients/agroleap.png" width="180" alt="" />
+                    <img src="../img/clients/art fert.png" width="180" alt="" />
+                    <img src="../img/clients/brand chenivals.png" width="180" alt="" />
+                    <img src="../img/clients/convert.png" width="180" alt="" />
+                    <img src="../img/clients/eafcam.png" width="180" alt="" />
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-four">
+        <div id="contact" class="scroll-nav"></div>
+
+        <h1>تواصل معنا</h1>
+        <div class="cont-contact">
+            <div class="data-contact" data-aos="fade-up" data-aos-duration="1000">
+                <div>
+                    <div class="header-contact">
+                        <svg viewBox="0 0 48 48" height="55" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="none"></path><path d="M24 16c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm17.88 6C40.96 13.66 34.34 7.04 26 6.12V2h-4v4.12C13.66 7.04 7.04 13.66 6.12 22H2v4h4.12c.92 8.34 7.54 14.96 15.88 15.88V46h4v-4.12c8.34-.92 14.96-7.54 15.88-15.88H46v-4h-4.12zM24 38c-7.73 0-14-6.27-14-14s6.27-14 14-14 14 6.27 14 14-6.27 14-14 14z" fill="#bec398" class="fill-000000"></path></svg>
+                        <h1 style="margin-right: 24px;">موقعنا</h1>
+                    </div>
+                    <p class="txt-contact">12 شارع اللواء احمد محمد علي - شارع عبد الحميد بدوي - مصر الجديدة - القاهرة
+                    </p>
+                </div>
+                <br>
+                <div class="phonenum">
+                    <div class="header-contact">
+                        <svg viewBox="0 0 1792 1792" height="70" xmlns="http://www.w3.org/2000/svg"><path d="M1600 1240q0 27-10 70.5t-21 68.5q-21 50-122 106-94 51-186 51-27 0-52.5-3.5T1151 1520t-47.5-14.5-55.5-20.5-49-18q-98-35-175-83-128-79-264.5-215.5T344 904q-48-77-83-175-3-9-18-49t-20.5-55.5T208 577t-12.5-57.5T192 467q0-92 51-186 56-101 106-122 25-11 68.5-21t70.5-10q14 0 21 3 18 6 53 76 11 19 30 54t35 63.5 31 53.5q3 4 17.5 25t21.5 35.5 7 28.5q0 20-28.5 50t-62 55-62 53-28.5 46q0 9 5 22.5t8.5 20.5 14 24 11.5 19q76 137 174 235t235 174q2 1 19 11.5t24 14 20.5 8.5 22.5 5q18 0 46-28.5t53-62 55-62 50-28.5q14 0 28.5 7t35.5 21.5 25 17.5q25 15 53.5 31t63.5 35 54 30q70 35 76 53 3 7 3 21z" fill="#bec398" class="fill-000000"></path></svg>
+                        <h1>رقم الهاتف</h1>
+                    </div>
+                    <p class="txt-contact">+20 1066690809</p>
+                    <p class="txt-contact">+20 221924262</p>
+                    <div class="work-contact hide-m">
+                        <h1>ساعات العمل</h1>
+                        <div class="work-hours">
+                            <div>
+                                9:00 Am - 6:00 Pm
+                            </div>
+                            <svg fill="none" style="margin-right: 10px;" height="65" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg"><path d="M9.102 15.815c.09-.178.232-.334.419-.442l3.396-1.96V7.5a1.083 1.083 0 1 1 2.166 0V14c0 .388-.203.73-.51.921-.063.06-.133.115-.211.16l-3.758 2.169a1.08 1.08 0 0 1-1.502-1.435Z" fill="#bec398" class="fill-000000"></path><path clip-rule="evenodd" d="M14 27c7.18 0 13-5.82 13-13S21.18 1 14 1 1 6.82 1 14s5.82 13 13 13Zm0-2.167c5.984 0 10.833-4.85 10.833-10.833 0-5.983-4.85-10.833-10.833-10.833C8.016 3.167 3.167 8.017 3.167 14c0 5.983 4.85 10.833 10.833 10.833Z" fill="#bec398" fill-rule="evenodd" class="fill-000000"></path></svg>
+                            <div>
+                                الاحد - الخميس
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="email-contact">
+                    <div class="header-contact">
+                        <svg viewBox="0 0 48 48" height="70" xmlns="http://www.w3.org/2000/svg"><path d="M40 8H8c-2.21 0-3.98 1.79-3.98 4L4 36c0 2.21 1.79 4 4 4h32c2.21 0 4-1.79 4-4V12c0-2.21-1.79-4-4-4zm0 8L24 26 8 16v-4l16 10 16-10v4z" fill="#bec398" class="fill-000000"></path><path d="M0 0h48v48H0z" fill="none"></path></svg>
+                        <h1>البريد الإلكتروني</h1>
+                    </div>
+                    <div class="txt-contact">
+                            <h3>المؤسس والمدير التنفيذي</h3>
+                            <p><a href="mailto:rana@brand-roots.com">rana@brand-roots.com</a></p>
+                        <br>
+                            <h3>اخصائي تصميم الجرافيك ووسائل التواصل الاجتماعي</h3>
+                            <p><a href="mailto:samar@brand-roots.com">samar@brand-roots.com</a></p>
+                            
+                        <br>    
+                            <h3>مدير تسجيل الاسمدة </h3>
+                            <p><a href="mailto:sara@brand-roots.com">sara@brand-roots.com</a></p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-contact">
+                <iframe data-aos="fade-up" data-aos-duration="1000" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.195396588949!2d31.346592915116872!3d30.1172217818559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x84b1c73e635921a1!2zMzDCsDA3JzAyLjAiTiAzMcKwMjAnNTUuNiJF!5e0!3m2!1sen!2seg!4v1665833099991!5m2!1sen!2seg" allowfullscreen="" loading="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="cont-map">
+                    <div class="data-contact fdc" >
+                        <div class="txt-contact">
+                            <h3>مسئول تسجيل الأسمدة والمبيدات</h3>
+                            <p><a href="mailto:amgad@brand-roots.com">amgad@brand-roots.com</a></p>
+                            <br>
+                            <h3>مدير الحسابات</h3>
+                            <p><a href="mailto:marwa@brand-roots.com">marwa@brand-roots.com</a></p>
+                            <br>
+                            <h3>مدير التسويق </h3>
+                            <p><a href="mailto:nour@brand-roots.com">nour@brand-roots.com</a></p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="data-contact ldc" >
+                        <div class="txt-contact">
+                            <br>
+                            <h3>مدير الاتصالات الدوليه ومدير تسجيل المبيدات</h3>
+                                <p><a href="mailto:manar@brand-roots.com">manar@brand-roots.com</a></p>
+                        </div>
+                        <div class="work-contact">
+                            <h1>ساعات العمل</h1>
+                            <div class="work-hours">
+                                <div>
+                                    9:00 Am - 6:00 Pm
+                                </div>
+                                <svg fill="none" style="margin-right: 10px;" height="65" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg"><path d="M9.102 15.815c.09-.178.232-.334.419-.442l3.396-1.96V7.5a1.083 1.083 0 1 1 2.166 0V14c0 .388-.203.73-.51.921-.063.06-.133.115-.211.16l-3.758 2.169a1.08 1.08 0 0 1-1.502-1.435Z" fill="#bec398" class="fill-000000"></path><path clip-rule="evenodd" d="M14 27c7.18 0 13-5.82 13-13S21.18 1 14 1 1 6.82 1 14s5.82 13 13 13Zm0-2.167c5.984 0 10.833-4.85 10.833-10.833 0-5.983-4.85-10.833-10.833-10.833C8.016 3.167 3.167 8.017 3.167 14c0 5.983 4.85 10.833 10.833 10.833Z" fill="#bec398" fill-rule="evenodd" class="fill-000000"></path></svg>
+                                <div>
+                                    الاحد - الخميس
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="cont-contact" data-aos="fade-up" data-aos-duration="1000">
+            <div class="data-contact">
+                <div>
+                    <div class="header-contact">
+                        <svg viewBox="0 0 48 48" height="45" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="none"></path><path d="M24 16c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm17.88 6C40.96 13.66 34.34 7.04 26 6.12V2h-4v4.12C13.66 7.04 7.04 13.66 6.12 22H2v4h4.12c.92 8.34 7.54 14.96 15.88 15.88V46h4v-4.12c8.34-.92 14.96-7.54 15.88-15.88H46v-4h-4.12zM24 38c-7.73 0-14-6.27-14-14s6.27-14 14-14 14 6.27 14 14-6.27 14-14 14z" fill="#fff" class="fill-000000"></path></svg>
+                        <h1 style="margin-right: 24px;">موقعنا</h1>
+                    </div>
+                    <p class="txt-contact">12 شارع اللواء احمد محمد علي - شارع عبد الحميد بدوي - مصر الجديدة - القاهرة
+                    </p>
+                </div>
+                <br>
+                
+                <div>
+                    <div class="header-contact mail">
+                        <svg viewBox="0 0 48 48" height="50" xmlns="http://www.w3.org/2000/svg"><path d="M40 8H8c-2.21 0-3.98 1.79-3.98 4L4 36c0 2.21 1.79 4 4 4h32c2.21 0 4-1.79 4-4V12c0-2.21-1.79-4-4-4zm0 8L24 26 8 16v-4l16 10 16-10v4z" fill="#fff" class="fill-000000"></path><path d="M0 0h48v48H0z" fill="none"></path></svg>
+                        <h1>البريد الالكتروني</h1>
+                    </div>
+                    <div class="txt-contact">
+                            <h3>المؤسس والمدير التنفيذي</h3>
+                            <p><a href="mailto:rana@brand-roots.com">rana@brand-roots.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="data-contact" style="margin-top: 0px; width: 500px;">
+                <div>
+                    <h1 class="facebook"><svg viewBox="0 0 512 512" width="40" style="margin:0px  15px 0px 0px;" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="m255.022 511.998.229.001h-.079l-.15-.001Zm1.806.001h-.079l.229-.001-.15.001Zm-2.588-.005.247.001h-.142l-.105-.001Zm3.415.001h-.142l.247-.001-.105.001Zm-4.169-.007.165.001-.132-.001h-.033Zm4.995 0-.132.001.165-.001h-.033Zm.826-.009-.058.001.223-.003-.165.002Zm-6.779-.002.223.003-.058-.001-.165-.002Zm7.604-.01-.135.002.275-.004-.14.002Zm-8.404-.002.275.004-.135-.002-.14-.002Zm9.228-.012-.182.003.254-.005-.072.002Zm-9.984-.002.254.005-.182-.003-.072-.002Zm-.937-.019.225.005-.04-.001-.185-.004Zm11.745.004-.04.001.225-.005-.185.004Zm-12.567-.025.309.008-.125-.003-.184-.005Zm13.39.005-.125.003.309-.008-.184.005Zm.823-.022-.201.006.316-.009-.115.003Zm-14.967-.003.316.009-.201-.006-.115-.003Zm-.72-.022.225.007-.212-.007-.194-.006.181.006Zm16.509 0-.212.007.225-.007.181-.006-.194.006Zm.821-.027-.112.004.345-.012-.233.008Zm-18.371-.008.345.012-.112-.004-.233-.008Zm-.749-.028.362.013-.201-.007-.161-.006Zm19.941.006-.201.007.362-.013-.161.006Zm-20.676-.036.354.015-.277-.011-.077-.004Zm21.495.004-.277.011.354-.015-.077.004Zm-22.525-.049.38.017-.093-.003-.287-.014Zm23.345.014-.093.003.38-.017-.287.014Zm-24.084-.048.394.018-.186-.008-.208-.01Zm24.902.01-.186.008.394-.018-.208.01Zm-25.63-.047.397.02-.279-.013-.118-.007Zm26.448.007-.279.013.397-.02-.118.007Zm.818-.043-.362.019.321-.017.378-.021-.337.019Zm-27.925.002.321.017-.362-.019-.337-.019.378.021Zm28.741-.048-.16.009.406-.023-.246.014Zm-29.844-.014.406.023-.16-.009-.246-.014Zm-.722-.043.405.024-.253-.014-.152-.01Zm31.382.01-.253.014.405-.024-.152.01Zm-32.071-.053.365.023-.34-.021-.342-.022.317.02Zm32.887.002-.34.021.365-.023.317-.02-.342.022Zm.814-.053-.122.008.387-.026-.265.018Zm-34.755-.018.387.026-.122-.008-.265-.018Zm-.721-.05.38.027-.208-.014-.172-.013Zm36.29.013-.208.014.38-.027-.172.013Zm-37.009-.064.349.025-.271-.019-.078-.006Zm37.822.006-.271.019.349-.025-.078.006Zm-38.789-.079.306.023-.074-.005-.232-.018Zm39.602.018-.074.005.306-.023-.232.018Zm.811-.063-.146.011.311-.025-.165.014Zm-41.157-.014.311.025-.146-.011-.165-.014Zm-.725-.059.264.022-.186-.015-.078-.007Zm42.694.007-.186.015.264-.022-.078.007Zm-43.492-.074.079.007-.013-.001-.066-.006Zm44.302.006-.013.001.079-.007-.066.006Zm.81-.071-.072.006.181-.016-.109.01Zm-45.965-.01.181.016-.072-.006-.109-.01Zm-.75-.068.135.013-.084-.008-.051-.005Zm47.523.005-.084.008.135-.013-.051.005ZM216 508.887C93.681 489.661 0 383.684 0 256 0 114.71 114.71 0 256 0c141.29 0 256 114.71 256 256 0 127.684-93.681 233.661-216 252.887V330h59.65L367 256h-71v-48.021c0-20.245 9.918-39.979 41.719-39.979H370v-63s-29.296-5-57.305-5C254.219 100 216 135.44 216 199.6V256h-65v74h65v178.887Z" fill="#ffffff" class="fill-000000"></path></svg><a href="https://www.facebook.com/brand.roots.egypt">/brand.roots.egypt</a></h1>
+                    <div class="footer-cp hide-m">
+
+                        <img src="../img/logo-02.png" alt="logo">
+                        <p> حقوق الطبع والنشر BrandRoots 2022 &copy; جميع الحقوق محفوظة</p>
+                    </div>
+                    
+
+                    <div class="header-contact phonefooter">
+                        <svg viewBox="0 0 1792 1792" style="margin-left:18px;" height="50" xmlns="http://www.w3.org/2000/svg"><path d="M1600 1240q0 27-10 70.5t-21 68.5q-21 50-122 106-94 51-186 51-27 0-52.5-3.5T1151 1520t-47.5-14.5-55.5-20.5-49-18q-98-35-175-83-128-79-264.5-215.5T344 904q-48-77-83-175-3-9-18-49t-20.5-55.5T208 577t-12.5-57.5T192 467q0-92 51-186 56-101 106-122 25-11 68.5-21t70.5-10q14 0 21 3 18 6 53 76 11 19 30 54t35 63.5 31 53.5q3 4 17.5 25t21.5 35.5 7 28.5q0 20-28.5 50t-62 55-62 53-28.5 46q0 9 5 22.5t8.5 20.5 14 24 11.5 19q76 137 174 235t235 174q2 1 19 11.5t24 14 20.5 8.5 22.5 5q18 0 46-28.5t53-62 55-62 50-28.5q14 0 28.5 7t35.5 21.5 25 17.5q25 15 53.5 31t63.5 35 54 30q70 35 76 53 3 7 3 21z" fill="#fff" class="fill-000000"></path></svg>
+                        <h1>رقم الهاتف</h1>
+                    </div>
+                    <p class="txt-contact fnum">+20 1066690809</p>
+                    <p class="txt-contact fnum">+20 221924262</p>
+                </div>
+                
+            </div>
+            <div class="footer-cp">
+
+                <img src="../img/logo-02.png" alt="logo">
+                        <p> حقوق الطبع والنشر BrandRoots 2022 &copy; جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+
+    </footer>
+    </section>
+    
+
+
+  
+    <script src="arbscript.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>AOS.init();</script>
+
+</body>
+</html>
